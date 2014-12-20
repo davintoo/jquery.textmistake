@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>jquery.textmistake demo</title>
+</head>
+<body>
+    <p>Mauris a nunc vel justo porttitor dictum eget id velit. Integer scelerisque, nulla vitae laoreet varius, dolor nibh rutrum ex, eu sagittis tellus metus eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras sit amet sodales massa. Nam magna metus, luctus quis bibendum vel, consectetur quis libero. Integer vulputate sapien nec condimentum commodo. Aliquam molestie enim vel nunc commodo mollis. Nullam at laoreet massa, nec tempus arcu. Aliquam erat volutpat. Curabitur a est non est interdum varius. Maecenas pharetra, dui porta tempus ullamcorper, mi neque viverra massa, quis scelerisque tortor ex non erat. Nulla sit amet odio magna. Nunc viverra libero sit amet ipsum vulputate molestie. Nunc aliquam, enim sit amet pulvinar auctor, erat leo scelerisque quam, at pretium ipsum nibh in elit. Nunc eu luctus dui, sed sagittis nibh. Phasellus eget eros placerat, vulputate lorem non, volutpat ligula.</p>
+
+    <p>Maecenas ac felis ut lorem scelerisque fermentum sed a sapien. Cras blandit tristique turpis, ac varius nisi accumsan vehicula. Vestibulum at dui eget elit tempus sodales vel ut leo. Quisque in justo suscipit, blandit diam eu, lacinia enim. Pellentesque tortor sapien, ultrices id nisi quis, hendrerit porttitor lacus. Proin vitae lacinia ex, vel tincidunt enim. Nulla et finibus ante, vitae interdum diam. Proin eget odio a dui vestibulum imperdiet vel nec augue. Nullam varius dui sed lacus tristique maximus. Duis sem velit, consectetur ac volutpat nec, dapibus id metus. Donec maximus nibh sed quam accumsan, eget pulvinar odio porttitor. Curabitur semper ante in neque congue, et elementum mauris tincidunt. Donec quis ipsum sed tellus elementum venenatis placerat vel neque. Nullam molestie, lacus vel consectetur egestas, quam nisi ullamcorper sapien, eget porta risus magna ac lorem.</p>
+
+    <p>Nulla et eros ac massa bibendum tincidunt tristique quis lectus. Nulla tincidunt mollis interdum. Nam pulvinar neque sed porttitor malesuada. Sed tempor tellus quis nunc molestie tempus ut sit amet ligula. Donec ut lectus ac felis luctus venenatis in nec ex. Maecenas semper posuere pulvinar. Donec lacinia velit in viverra auctor. Cras dapibus sodales rutrum. Etiam eu congue sapien, ut posuere nibh. Suspendisse sit amet enim vel mi congue volutpat. Suspendisse eget dolor tristique, fermentum augue eget, varius massa. Cras scelerisque nec elit sit amet lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="jquery.textmistake.min.js"></script>
+    <script type="text/javascript">
+    (function(e){
+        jQuery(document).textmistake({
+            'l10n': {
+                'title': 'Сообщить автору об опечатке:',
+                'urlHint': 'Адрес страницы с ошибкой:',
+                'errTextHint': 'Текст с ошибкой:',
+                'yourComment': 'Ваш комментарий или корректная версия:',
+                'userComment': 'Комментарий от пользователя:',
+                'commentPlaceholder': 'Введите комментарий',
+                'cancel': 'Отмена',
+                'send': 'Отправить',
+                'mailSubject': 'Ошибка в тексте на сайте',
+                'mailTitle': 'Ошибка в тексте на сайте',
+                'mailSended': 'Уведомление отправлено',
+                'mailSendedDesc': 'Ваше уведомление успешно отправлено. Спасибо за ваш отзыв!',
+                'mailNotSended': 'Ошибка при отправке',
+                'mailNotSendedDesc': 'Увы, но ваше сообщение не было отправлено. Извините что так получилось.',
+            },
+            'mailTo': 'your_email(d0g)ishere.com'.replace(/\(d0g\)/, '@'),
+            'mailFrom': 'textmistake(d0g)yourdomain.com'.replace(/\(d0g\)/, '@'),
+            'mandrillKey': '', // Get your - https://mandrill.com/signup/
+            'sendmailUrl': '', // ./textmistake.php
+        });
+    })(jQuery)
+    </script>
+</body></html>
