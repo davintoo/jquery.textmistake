@@ -3,9 +3,9 @@
 /**
  * @author  Samoylov Nikolay <samoylovnn [at] gmail [dt] com>
  * @weblog  http://blog.kplus.pro/
- * @project jquery.textmistake
+ * @project https://github.com/tarampampam/jquery.textmistake
  *
- * @version    0.1
+ * @version 0.1
  *
  * @licensy Licensed under the MIT, license text: http://goo.gl/JsVjCF
  */
@@ -31,7 +31,7 @@ $.fn.textmistake = function(options) {
                 'mailNotSended': 'Sending error',
                 'mailNotSendedDesc': 'Your message has not been sent, sorry.',
             },
-            'debug': false,
+            'debug': true, // fet 'false' if all tested and works fine
             'initCss': true,
             'initHtml': true,
             
@@ -148,7 +148,8 @@ $.fn.textmistake = function(options) {
         #mt_c p .url{\
             color:#0f5bd9;text-decoration:underline}\
         #mt_c blockquote{\
-            padding:0;margin:6px 25px 20px 25px;background:transperent!important}\
+            font-family:Arial,sans-serif;font-size:13px;line-height:18px;\
+            padding:0;margin:6px 25px 20px 25px;background-image:none;background:transperent}\
         #mt_c blockquote strong{\
             font-weight:700;color:#d31;text-decoration:underline}\
         #mt_c input[type=\'text\']{\
