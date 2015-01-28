@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author  Samoylov Nikolay <https://github.com/tarampampam>
+ * @author  Samoylov Nikolay <github.com/tarampampam>
  * @weblog  http://blog.kplus.pro/
  * @project https://github.com/tarampampam/jquery.textmistake
  *
