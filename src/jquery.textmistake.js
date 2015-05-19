@@ -404,7 +404,7 @@ $.fn.textmistake = function(options) {
             
             comment.val(''); // clear comment input
             
-            url.text(window.location);
+            url.text(window.location.href);
             textdata.html('&hellip;' + atStart + '<strong>' + selectedText + '</strong>' + atEnd + '&hellip;');
             
             showWindow(true);
