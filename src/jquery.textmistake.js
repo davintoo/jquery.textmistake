@@ -316,7 +316,7 @@ $.fn.textmistake = function(options) {
             
             var mailBody = '<html lang="en"><head><meta charset="utf-8" /></head><body>'+
                            '<h2>'+settings.l10n.mailTitle+'</h2>'+"\n"+
-                           '<p><small>'+settings.l10n.urlHint+' '+url.text()+'</small></p>'+"\n\n"+
+                           '<p><small>'+settings.l10n.urlHint+' <a href="'+url.text()+'" target="_blank">'+url.text()+'</a></small></p>'+"\n\n"+
                            '<p>'+settings.l10n.errTextHint+'</p>'+"\n"+
                            '<blockquote>'+textdata.html()+'</blockquote>'+"\n\n";  
             if(comment.val())
