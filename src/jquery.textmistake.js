@@ -66,7 +66,7 @@ $.fn.textmistake = function(options) {
             'onAjaxSendError': function(response){},
         },
         // Apply user settings to defaults
-        settings = $.extend({}, defaults, options),
+        settings = $.extend(true, defaults, options),
         log = function(text) {
             if(settings.debug) {
                 var now = new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1");
@@ -122,13 +122,13 @@ $.fn.textmistake = function(options) {
         #mt_c div.title.feedback{\
             background-image:url(\'https://i.imgur.com/BCvESIh.png\')}\
         #mt_c div.title.fire{\
-            background-image:url(\'http://i.imgur.com/CHwbq2g.png\')}\
+            background-image:url(\'https://i.imgur.com/CHwbq2g.png\')}\
         #mt_c div.title.mail{\
-            background-image:url(\'http://i.imgur.com/Mo8R3H8.png\')}\
+            background-image:url(\'https://i.imgur.com/Mo8R3H8.png\')}\
         #mt_c div.title.star{\
-            background-image:url(\'http://i.imgur.com/wgTKfJF.png\')}\
+            background-image:url(\'https://i.imgur.com/wgTKfJF.png\')}\
         #mt_c div.title.cross{\
-            background-image:url(\'http://i.imgur.com/5nx776T.png\')}\
+            background-image:url(\'https://i.imgur.com/5nx776T.png\')}\
         #mt_c div.title h1{\
             color:#000;display:inline;font-family:Arial,sans-serif;font-size:16px;font-weight:400;line-height:32px}\
         #mt_c p{\
