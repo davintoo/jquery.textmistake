@@ -1,0 +1,11 @@
+!.gitignore
+
+# IDEs
+/.idea
+/nbproject
+
+# Etc.
+/tmp
+/temp
+
+/vendor

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author  Samoylov Nikolay <github.com/tarampampam>
+ * @author  <github.com/tarampampam>
  * @weblog  http://blog.kplus.pro/
  * @project https://github.com/tarampampam/jquery.textmistake
  *
@@ -42,7 +42,7 @@ if(empty($_POST)) {
     exitWithMessage('Direct access not allowed');
 } elseif(isset($_POST['message']) and is_array($_POST['message'])
     and !empty($_POST['message'])) {
-    
+
     $message = $_POST['message'];
     $mailTo = (string) '';
     $mailFrom = (string) '';
@@ -55,7 +55,7 @@ if(empty($_POST)) {
         $mailTo = $message['to'][0]['email'];
     if(empty($mailTo))
         exitWithMessage('Empty or invalid email address for sending');
-        
+
     // Check mail sender
     if(defined('MailFrom') and validateEmail(MailFrom))
         $mailFrom = MailFrom;
@@ -73,24 +73,24 @@ if(empty($_POST)) {
         '##', $message['html']);
         $message['html'] = secureClear($message['html']);
     }
-    
+
     // Check subject
     if (empty($message['subject'])) exitWithMessage('Empty subject');
 
     // Check mail body
     if (empty($message['html'])) exitWithMessage('Empty or invalid mail body');
-    
+
     // Prepare sendmail headers
     $headers = "MIME-Version: 1.0\r\n".
-        "Content-Type: text/".((defined('RemoveHTML') and RemoveHTML) ? 
+        "Content-Type: text/".((defined('RemoveHTML') and RemoveHTML) ?
         "plain" : "html")."; charset=\"utf-8\"\r\n";
-    
+
     $headers .= "From: ".$mailFrom."\r\n".
                 "Reply-To: ".$mailFrom."\r\n".
                 "Return-Path: ".$mailFrom."\r\n";
-        
+
     // And sending mail
-    if(!mail($mailTo, 
+    if(!mail($mailTo,
              '=?UTF-8?B?'.base64_encode($message['subject']).'?=',
              $message['html'],
              $headers)) {
