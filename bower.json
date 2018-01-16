@@ -1,5 +1,5 @@
 {
-    "name": "text-mistake",
+    "name": "textMistake",
     "version": "1.0.0",
     "main": "jquery.textmistake.js",
     "ignore": [
