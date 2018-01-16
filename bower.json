@@ -1,0 +1,12 @@
+{
+    "name": "text-mistake",
+    "version": "1.0.0",
+    "main": "jquery.textmistake.js",
+    "ignore": [
+        ".gitignore",
+        "README.md"
+    ],
+    "dependencies": {
+        "jquery": ">=1.11.0",
+    }
+}
