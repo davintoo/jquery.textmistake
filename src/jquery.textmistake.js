@@ -225,7 +225,7 @@
       },
       // Clear string from any 'invalid' chars and empty spaces
       clearString = function (s) {
-        return s.replace(/\s+/g, ' ').replace(/[^a-zа-яё0-9\.\,\ \_\-\(\)\[\]\{\}\`\~\@\#\$\%\^\:\*]/gi, '');
+        return s.replace(/\s+/g, ' ').replace(/[^a-zа-яіё0-9\.\,\ \_\-\(\)\[\]\{\}\`\~\@\#\$\%\^\:\*]/gi, '');
       },
       // Move window to screen center
       centerWindow = function () {
