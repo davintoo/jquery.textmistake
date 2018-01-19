@@ -334,7 +334,10 @@
                   'type': 'to'}],
               'autotext': 'true',
               'subject': clearString(settings.l10n.mailSubject),
-              'html': mailBody
+              'html': mailBody,
+              'selected_text': textdata.html(),
+              'comment': comment.val(),
+              'url':url.text()
             }
           };
 
